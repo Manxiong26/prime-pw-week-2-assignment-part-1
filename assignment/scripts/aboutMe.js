@@ -6,7 +6,7 @@ let lastName = "Xiong";// 2 - Create a second variable called `lastName` and ass
 let fullName = firstName + " " + lastName;// 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
 
-console.log("fullName");// 4 - Console log the value of `fullName`
+console.log(fullName);// 4 - Console log the value of `fullName`
 
 let luckyNumber = 26;// 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 
@@ -35,7 +35,7 @@ else{
 // if it's not true, console log "How about we stay home?"
 
 
-if(luckyNumber = 2 && adventurous){
+if(luckyNumber === 2 && adventurous){
   console.log("Roll the dice!");
 }// 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
@@ -43,7 +43,7 @@ if(luckyNumber = 2 && adventurous){
 if(pets < allowedPets){
   console.log("I can have more pets");
 }
-else if(pets = allowedPets){
+else if(pets === allowedPets){
   console.log("I have enough pets!");
 }
 else if(pets > allowedPets){
@@ -68,12 +68,11 @@ console.log(mostPets);// 16 - Make a variable called `mostPets` and a conditiona
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-
-switch (mostPets){
-  case pets > friendsPets:
+switch (pets > friendsPets){
+  case true:
   mostPets = pets;
   break;
-  case pets < friendsPets:
+  case false:
   mostPets = friendsPets;
 }
 console.log(mostPets);// 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
